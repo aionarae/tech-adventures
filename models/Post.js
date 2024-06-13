@@ -5,7 +5,6 @@ class Post extends Model {}
 
 // Post contains title, contents, post creator’s username, and date created for that post, and optional comment
 
-
 Post.init(
   {
     id: {
@@ -43,3 +42,5 @@ Post.init(
     modelName: 'post'
   }
 );
+
+module.exports = Post;

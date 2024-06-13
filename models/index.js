@@ -1,5 +1,5 @@
 const User = require('./User');
-const Project = require('./Post');
+const Post = require('./Post');
 
 // user has many posts
 User.hasMany(Post, {
@@ -8,8 +8,7 @@ User.hasMany(Post, {
 
 // post belongs to one user
 Post.belongsTo(User, {
-  foreignKey: 'user_id'
-
+  foreignKey: 'username'
 });
 
 module.exports = { User, Post };

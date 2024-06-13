@@ -1,11 +1,11 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class User extends Model {}
+class PostComment extends Model {}
 
-// User contains username and password
+// PostComment contains the comment, the username of the comment creator, and date when the comment was created
 
-User.init(
+PostComment.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,21 +13,26 @@ User.init(
       primaryKey: true,
       autoIncrement: true
     },
-    user_name: {
+    comment: {
       type: DataTypes.STRING,
       allowNull: false
     },
-    password: {
+    username: {
       type: DataTypes.STRING,
       allowNull: false
+    },
+    date_created: {
+      type: DataTypes.DATE,
+      allowNull: false,
+      defaultValue: DataTypes.NOW
     }
   },
   {
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user'
+    modelName: 'postComment'
   }
 );
 
-module.exports = User;
+module.exports = PostComment;

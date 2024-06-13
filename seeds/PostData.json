@@ -1,0 +1,46 @@
+[
+  {
+    "title": "Post 1",
+    "contents": "This is the first post",
+    "username": "user1",
+    "date": "2024-06-01",
+    "comments": [
+      {
+        "username": "user2",
+        "text": "This is a comment"
+      }
+    ]
+  },
+  {
+    "title": "Post 2",
+    "contents": "This is the second post",
+    "username": "user2",
+    "date": "2024-06-02",
+    "comments": [
+      {
+        "username": "user1",
+        "text": "This is a comment"
+      }
+    ]
+  },
+  {
+    "title": "Post 3",
+    "contents": "This is the third post",
+    "username": "user3",
+    "date": "2024-06-03",
+    "comments": [
+      {
+        "username": "user1",
+        "text": "This is a comment"
+      },
+      {
+        "username": "user2",
+        "text": "This is a comment"
+      },
+      {
+        "username": "user3",
+        "text": "This is a comment"
+      }
+    ]
+  }
+]
